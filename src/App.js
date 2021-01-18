@@ -5,10 +5,6 @@ import './scss/style.css';
 
 function App() {
   return (
-    // <div className="app">
-    //   <Polling />
-    // </div>
-
     <BrowserRouter>
       <Switch>
         <Route exact path="/">

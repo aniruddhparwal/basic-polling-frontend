@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import LineChart from './LineChart'
 
 function Dashboard() {
 
@@ -33,6 +34,8 @@ function Dashboard() {
                     </tr>
                 ))}
             </table>
+            <LineChart />
+
         </div>
     )
 }

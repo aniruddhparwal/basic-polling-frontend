@@ -1,0 +1,23 @@
+.polling{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    form{
+        padding: 20px;
+        width: max-content;
+        background-color: aquamarine;
+        height: max-content;
+        input{
+            margin: 10px;
+            height: 20px;
+        }
+        select{
+            option{
+                margin: 10px;
+                height: 20px;
+            }
+        }
+    }
+    
+}

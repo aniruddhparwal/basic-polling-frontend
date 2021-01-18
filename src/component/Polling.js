@@ -49,11 +49,7 @@ function Polling() {
                     </select>
                 </div>
                 <div>
-                    Date: <input type="date" value={time} onChange={e => {
-                        setTime
-                            (e.target.value)
-                    }
-                    } />
+                    Date: <input type="date" value={time} onChange={e => { setTime(e.target.value) }} />
                 </div>
                 <button onClick={onSubmit}>Submit</button>
             </form>
