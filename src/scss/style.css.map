@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "style.scss",
+        "_app.scss",
+        "_polling.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
