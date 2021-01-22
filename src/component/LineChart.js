@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-// import { Chart } from 'react-charts'
 import { Line } from "react-chartjs-2";
 
 function LineChart() {
@@ -69,7 +68,6 @@ function LineChart() {
             {
                 label: "True",
                 data: trueVote,
-                // data: [10, 53, 85, 41, 44, 65],
                 fill: false,
                 backgroundColor: "rgba(75,192,192,0.2)",
                 borderColor: "rgba(75,192,192,1)"
@@ -77,7 +75,6 @@ function LineChart() {
             {
                 label: "False",
                 data: falseVote,
-                // data: [36, 25, 35, 51, 54, 76],
                 fill: false,
                 borderColor: "#742774"
             }
@@ -97,7 +94,8 @@ function LineChart() {
     };
 
     return (
-        <div>
+        <div className="linechart">
+            <center><h1>LineChart</h1></center>
             {dataAva && <Line data={data} options={options} />}
         </div>
     )

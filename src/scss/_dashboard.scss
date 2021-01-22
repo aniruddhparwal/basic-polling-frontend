@@ -1,11 +1,18 @@
 .dashboard{
     display: flex;
+    // background-color: aquamarine;
+    background:linear-gradient(70deg,#aea79f,#dd4814);
+    height: 100vh;
 }
 .dashboard__table{
     display: flex;
-    flex: 0.5;
+    flex-direction: column;
+    flex: 0.3;
 }
 .dashboard__graph{
     display: flex;
+    flex: 1;
     flex-direction: column;
+    width: 100%;
+    height: 100vh;
 }

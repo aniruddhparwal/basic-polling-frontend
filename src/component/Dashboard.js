@@ -7,6 +7,7 @@ function Dashboard() {
     const [data, setData] = useState([])
 
     useEffect(async () => {
+        document.title = "Dashboard"
         try {
             const response = await fetch(
                 'http://localhost:5000/data',
@@ -36,10 +37,11 @@ function Dashboard() {
                         </tr>
                     ))}
                 </table>
+                <BarChart />
+
             </div>
             <div className="dashboard__graph">
                 <LineChart />
-                <BarChart />
             </div>
         </div>
     )

@@ -65,6 +65,7 @@ function BarChart() {
 
     return (
         <div className="barchart" >
+            <h1>Bargraph</h1>
             {dataAva && <Bar data={state} options={options} />}
         </div >
     )

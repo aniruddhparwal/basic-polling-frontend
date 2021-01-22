@@ -3,20 +3,23 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
+    background-color: blueviolet;
     form{
         padding: 20px;
         width: max-content;
         background-color: aquamarine;
         height: max-content;
+        border-radius: 5px;
+        box-shadow: 1px 0px 46px 23px rgba(55,87,138,0.6);
         input{
             margin: 10px;
             height: 20px;
         }
         select{
-            option{
-                margin: 10px;
+            
+                margin: 0 22px;
                 height: 20px;
-            }
+            
         }
     }
     

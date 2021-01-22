@@ -1,0 +1,12 @@
+.linechart{
+    align-items: center;
+    justify-content: center;
+    h1{
+        justify-content: center;
+    }
+    height: 80%;
+    canvas{
+        height: 100% !important;
+        width: 100% !important;
+    }
+}
