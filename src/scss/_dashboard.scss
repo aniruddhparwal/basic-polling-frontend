@@ -1,0 +1,11 @@
+.dashboard{
+    display: flex;
+}
+.dashboard__table{
+    display: flex;
+    flex: 0.5;
+}
+.dashboard__graph{
+    display: flex;
+    flex-direction: column;
+}

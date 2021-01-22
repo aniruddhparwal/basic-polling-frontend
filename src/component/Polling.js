@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 function Polling() {
 
     const [name, setName] = useState('')
-    const [vote, setVote] = useState()
+    const [vote, setVote] = useState("1")
     const [time, setTime] = useState()
 
     const onSubmit = async (e) => {
@@ -20,7 +20,7 @@ function Polling() {
                     body: JSON.stringify({
                         "name": name,
                         "voting_choice": vote,
-                        "time": time
+                        "casted_at": time
                     })
                 }
             ).then(res => res.json())

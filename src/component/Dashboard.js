@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import BarChart from './BarChart'
 import LineChart from './LineChart'
 
 function Dashboard() {
@@ -20,22 +21,26 @@ function Dashboard() {
     }, [])
     return (
         <div className="dashboard">
-            <table>
-                <tr>
-                    <th>Name</th>
-                    <th>Vote</th>
-                    <th>Time</th>
-                </tr>
-                {data.map((each) => (
-                    <tr key={each.id}>
-                        <td>{each.name}</td>
-                        <td>{each.voting_choice}</td>
-                        <td>{each.casted_at}</td>
+            <div className="dashboard__table">
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Vote</th>
+                        <th>Time</th>
                     </tr>
-                ))}
-            </table>
-            <LineChart />
-
+                    {data.map((each) => (
+                        <tr key={each.id}>
+                            <td>{each.name}</td>
+                            <td>{each.voting_choice}</td>
+                            <td>{each.casted_at}</td>
+                        </tr>
+                    ))}
+                </table>
+            </div>
+            <div className="dashboard__graph">
+                <LineChart />
+                <BarChart />
+            </div>
         </div>
     )
 }
